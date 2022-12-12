@@ -368,17 +368,14 @@ display: block;
     height: 92px;
     padding: 16px 32px 16px 32px;
     cursor: pointer;
- 
 }
 
 .customer-icon {
     fill: #AFB1B8;
 }
 
-
 .customer-link {
     display: flex;
-
 }
 
 /* footer container */
