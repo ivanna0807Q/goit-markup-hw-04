@@ -57,6 +57,7 @@ ul {
     margin-bottom: 0%;
     padding-left: 15px;
     padding-right: 15px;
+    outline: 1px solid red ;
 
 }
 
@@ -177,6 +178,9 @@ display: block;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: url(../images/hero-bg.jpg);
+    background-size: 1600px, 600px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .hero-title {
@@ -210,7 +214,9 @@ display: block;
     padding-bottom: 10px;
     padding-left: 24px;
     padding-right: 24px;
-   
+    width: 216px;
+    height: 50px;
+    
 }
 
 /*strenght section styles*/
@@ -231,7 +237,7 @@ display: block;
 }
 
 /*h3 and text styles */
-.strength-name, .team-name, .work-title, .team-title {
+.strength-name, .team-name, .work-title, .team-title, .customer-title {
   color: var(--primary-title-color);
   
 }
@@ -278,7 +284,8 @@ display: block;
 .third-images {
     margin-right: 0;
 }
-.work-title, .team-title {
+.work-title, .team-title, .customer-title 
+{
     font-size: 36px;
     line-height: calc(42 / 36);
     text-align: center;
@@ -306,8 +313,8 @@ display: block;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-   
 }
+
 .team-member:last-child {
     margin-right: 0;
 }
@@ -341,6 +348,37 @@ display: block;
 .member-text {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+
+/*Customer section*/
+
+.customer-title {
+    margin-bottom: 50px;
+}
+.customer-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.customer-items {
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px 16px 32px;
+    cursor: pointer;
+ 
+}
+
+.customer-icon {
+    fill: #AFB1B8;
+}
+
+
+.customer-link {
+    display: flex;
+
 }
 
 /* footer container */
@@ -444,7 +482,6 @@ display: block;
     font-size: 16px;
     line-height: calc(26 / 16);
     letter-spacing: 0.03em;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     border: 0px solid transparent;
     min-width: 23px;
@@ -462,6 +499,7 @@ display: block;
 .portfolio-button:active {
     color: #FFFFFF;
     background-color: var(--link-active-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* Projects styles */
@@ -500,6 +538,14 @@ display: block;
     width: 370px;
     border: 1px solid #EEEEEE;
 }
+
+ .project-list:hover,
+ .project-list:focus
+ .project-list:active {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    }
+
 .project-list:nth-child(3n) {
 margin-right: 0;
 }
