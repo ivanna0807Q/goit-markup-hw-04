@@ -140,6 +140,7 @@ display: block;
      padding-bottom: 32px;
      flex-direction: row-reverse;
      align-items: center;
+     fill: var(--primary-text-color);
 
 
  }
@@ -155,9 +156,12 @@ display: block;
 }
 
 .header-icon {
-    fill: var(--primary-text-color);
     margin-right: 10px;
+   
 }
+
+
+
 
 
 .contacts-items {
@@ -168,17 +172,17 @@ display: block;
     letter-spacing: 0.02em;
 }
 
-/* .contacts-header-link:hover,
-.contacts-header-link:focus
- { 
-    color: var(--link-active-color);
-    fill: var(--link-active-color);
-    
- } */
-
 .header-nav .header-nav-link.current {
     color: var(--link-active-color);
 }
+
+.contacts-header-link:hover,
+.contacts-header-link:focus {
+    color: var(--link-active-color);
+    fill: var(--link-active-color);
+}
+
+
 
 
 
