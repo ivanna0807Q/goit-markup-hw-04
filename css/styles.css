@@ -379,6 +379,15 @@ display: block;
     padding-bottom: 30px;
 }
 
+.team-icons-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+
+
 
 /*Customer section*/
 
