@@ -11,6 +11,7 @@
     --body-backgroud-color: #FFFFFF;
     --team-background-color:#F5F4FA;
     --footer-background-color: #2F303A;
+    --icons-grey-regular: #AFB1B8; 
 }
 
 h1,
@@ -22,8 +23,13 @@ h6,
 p {
     margin: 0;
     padding: 0;
+    
 }
-
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .team-name, .strength-name {
     margin-bottom: 10px;
     margin-top: 0;
@@ -57,7 +63,6 @@ ul {
     margin-bottom: 0%;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 1px solid red ;
 
 }
 
@@ -373,6 +378,7 @@ display: block;
     line-height: calc(19 / 16);
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
 }
 .member-text {
     padding-top: 30px;
@@ -385,7 +391,10 @@ display: block;
     gap: 10px;
     padding-bottom: 30px;
 }
-
+.team-block {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 
 
@@ -420,8 +429,34 @@ display: block;
 
 .customer-link {
     display: flex;
-
 }
+.social-icon {
+    
+    border-radius: 100%;
+    fill: var(--icons-grey-regular)
+}
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    fill: var(--icons-grey-regular);
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.social-link:hover {
+    fill: white;
+    background-color: #2196F3;
+    
+}
+
+
+
 
 /* footer container */
 .footer {
@@ -487,6 +522,53 @@ display: block;
     margin-top: 28px;
 }
 
+.social-text-title {
+    color: #EEEEEE;
+}
+.footer-address {
+    margin-right: 70px;
+}
+.social-text-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--hero-title-color);
+    margin-bottom: 20px;
+}
+.footer-social-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.join-us-main {
+    display: flex;
+    align-items: baseline;
+}
+.team-icons-list {
+    padding-bottom: 0;
+}
+
+.social-link-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    fill: var(--icons-grey-regular);
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+.social-link-footer:hover {
+    fill: white;
+    background-color: #2196F3;
+}
 
 /**** Porfolio Styles ****/
 .header-nav-link .header-nav-link.current
